@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Merriweather:wght@400;700;900&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *,
 *::after,
 *::before {
@@ -172,7 +176,7 @@ nav ul a {
 
 /* Hero Section */
 .hero-bg {
-    background-image: url(./Images/Coffee\ Splash.png);
+    background-image: url("./Images/Coffee Splash.png");
     background-repeat: no-repeat;
     background-position: right bottom;
 }
@@ -183,7 +187,7 @@ nav ul a {
 }
 
 h4 {
-    font-weight: 900;   
+    font-weight: 900;
     font-size: var(--c1--4--);
     text-transform: capitalize;
 }
@@ -206,8 +210,8 @@ p {
 /* End Hero Section */
 
 /* Menu/Blends */
-.blend-bg, 
-.choose-bg, 
+.blend-bg,
+.choose-bg,
 .testimonial-bg, .contact-bg {
     position: relative;
     padding: var(--gap--) 0;
@@ -217,7 +221,7 @@ p {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(./Images/Coffe\ Bean\ splash.png);
+    background-image: url("./Images/Coffee Bean splash.png");
     background-repeat: no-repeat;
     background-position: left bottom;
     opacity: 0.25;
@@ -310,7 +314,7 @@ h5 {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(./Images/coffeeMugBkgrd.png);
+    background-image: url("./Images/coffeeMugBkgrd.png");
     background-repeat: no-repeat;
     background-position: top-rightt;
     opacity: 0.25;
@@ -347,7 +351,7 @@ h5 {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(./Images/coffeeMugBkgrd.png);
+    background-image: url("./Images/coffeeMugBkgrd.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: cover;
@@ -369,7 +373,7 @@ h5 {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(./Images/Arrow\ left.png), url(./Images/Arrow\ right.png);
+    background: url("./Images/Arrow left.png"), url("./Images/Arrow right.png");
     background-repeat: no-repeat;
     background-position: top left, right bottom;
     opacity: 0.25;
@@ -391,8 +395,8 @@ h5 {
     position: absolute;
     top: 0;
     left: 0;
-    content: " " ";
-    font-size var(--h1--);
+    content: '"';
+    font-size: var(--h1--);
     color: var(--c1--2--);
     line-height: 1;
 }
@@ -446,7 +450,7 @@ h5 {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url(./Images/Coffee\ Splash.png);
+    background-image: url("./Images/Coffee Splash.png");
     background-repeat: no-repeat;
     background-position: left top;
     opacity: 0.25;
@@ -516,7 +520,7 @@ footer::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: url(./Images/Coffee\ Splash.png), url(./Images/Coffee\ Splash.png), url(./Images/Coffee\ Splash.png);
+    background: url("./Images/Coffee Splash.png"), url("./Images/Coffee Splash.png"), url("./Images/Coffee Splash.png");
     background-repeat: no-repeat;
     background-position: left top, right top, bottom center;
     background-size: auto, auto, cover;
@@ -569,7 +573,7 @@ footer ul a {
         display: flex;
         cursor: pointer;
         background-color: transparent;
-        background-image: url(./Images/menu\ 48.png);
+        background-image: url("./Images/menu 48.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 30px;
@@ -587,7 +591,7 @@ footer ul a {
     .toggleMenu:active {
         position: fixed;
         right: 5%;
-        background-image: url(./Images/close.png);
+        background-image: url("./Images/close.png");
         background-size: 25px;
     }
 
@@ -632,3 +636,4 @@ footer ul a {
 }
 
 /* End Media */ 
+
