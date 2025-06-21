@@ -1,7 +1,8 @@
 // src/index.jsx
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import '../styles/globals.css';
-import Footer from './components/Footer';
-import coffeeSplash from './images/CoffeeSplash.png';
+// import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       {/* ...rest of your sections */}
       <div
         className="choose-card"
-        style={{ backgroundImage: `url(${coffeeSplash})` }}
+        style={{ backgroundImage: 'url("/images/CoffeeSplash.png")' }}
       >
         {/* content */}
       </div>
@@ -17,3 +18,6 @@ export default function Home() {
     </>
   );
 }
+
+const root = createRoot(document.getElementById('root'));
+root.render(<Home />);
