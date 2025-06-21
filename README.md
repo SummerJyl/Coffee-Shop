@@ -6,35 +6,11 @@ A responsive, single-page application showcasing a local coffee shop's offerings
 
 ## ✨ Key Features
 
-## 🚀 Features
-- **Fixed Navigation**: Sticky, accessible nav bar for smooth browsing.
-- **Hero Section**: Immersive imagery sets the mood.
-- **Menu / Blends Slider**: Interactive blend display powered by JavaScript.
-- **Signature Offerings**: Clean HTML/CSS layouts for drinks & specials.
-- **Why Choose Us**: Unique selling points highlighted with clarity.
-- **Promotions & Events**: Engaging advert section for current highlights.
-- **Testimonial Slider**: Rotating customer reviews for social proof.
-- **Contact Form in Modal**: Pop-out form with embedded map—UX optimized.
-- **Footer**: Centered branding, contact info, and social links for a polished finish.
-- Dynamic testimonial slider
-- Responsive design
-- Interactive homepage with smooth animations
+- 🔗 **Fixed Navigation:**  
+  Streamlined, accessible fixed navigation bar for easy exploration of blends, menu, and contact info.
 
-Challenges & Solutions
-- Image Display Issues: Resolved by correcting image paths and importing images into JavaScript files.
-- Webpack Configuration: Configured devServer to serve static files from the public/ directory.
-- Tailwind CSS Integration: Set up PostCSS with the necessary plugins to process Tailwind's directives.
-
-💡 Future Improvements
-- Implementing a backend to handle user reviews and orders.
-- Adding a contact form for customer inquiries.
-- Enhancing accessibility features. 
-
-🔗 Fixed Navigation:
-A streamlined, accessible navigation bar that remains fixed at the top, ensuring users can easily explore the menu, blends, and contact information without scrolling back to the top.
-
-🎨 Hero Section:
-A captivating welcome section featuring rich imagery that showcases the cozy ambiance and inviting coffee moments, setting the tone for the user's experience.
+- 🎨 **Hero Section:**  
+  Captivating welcome with rich imagery that showcases the cozy ambience and inviting coffee moments.
 
 🖼️ Menu/Blends Slider:
 A dynamic slider built with HTML and JavaScript to showcase a variety of coffee and tea blends, allowing users to explore offerings interactively.
