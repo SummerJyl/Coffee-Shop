@@ -1,6 +1,6 @@
 // Navigation
 document.querySelector('.toggleMenu').addEventListener('click', () => {
-    document.querySelector(".toggleMenu, .navigation").forEach(elem => elem.classList.toggle('active'));
+    document.querySelectorAll(".toggleMenu, .navigation").forEach(elem => elem.classList.toggle('active'));
 });
 // End Navigation
 
@@ -49,8 +49,8 @@ var swiper = new Swiper(".testimonial-slider", {
       disableOnInteraction: false,
   },
   navigation: {
-      nextE1: ".swiper-button-next",
-      nextE1: ".swiper-button-prev",
+      nextEL: ".swiper-button-next",
+      nextEL: ".swiper-button-prev",
   },
 });
 //End Testimonial

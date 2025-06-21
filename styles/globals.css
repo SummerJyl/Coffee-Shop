@@ -176,7 +176,7 @@ nav ul a {
 
 /* Hero Section */
 .hero-bg {
-    background-image: url("/Images/CoffeeSplash.png");
+    background-image: url("/images/CoffeeSplash.png");
     background-repeat: no-repeat;
     background-position: right bottom;
 }
@@ -377,7 +377,7 @@ h5 {
   max-width: 600px;
 }
 
-.testimonial-bg::after {
+/* .testimonial-bg::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -386,7 +386,7 @@ h5 {
     background-position: top left, right bottom;
     opacity: 0.25;
     z-index: -1;
-}
+} */
 
 .testimonial-slider .swiper-slide {
     text-align: center;
@@ -427,14 +427,13 @@ h5 {
 }
 
 .profile-img {
-    float: left;
     width: 100px;
     height: 100px;
     margin-right: 1 rem;
-    overflow: hidden;
-    margin: 0;
-    border: 5px solid var(--c1--4--);
-    border-radius: 50%;
+    object-fit: cover;
+    background-color: #6a4e23;
+    /* border: 5px solid var(--c1--4--);
+    border-radius: 50%; */
     /* -webkit-border-radius: 50;
     -moz-border-radius: 50;
     -ms-border-radius: 50;
@@ -448,25 +447,38 @@ h5 {
     object-position: center;
 }
 
-.swiper-button-next, .swiper-button-prev {
-    fill: var(--c1--3--);
-    width: 50px;
-    height: 50px;
-    padding: 1rem;
-    background: var(--c1--3--);
-    border: 2.5px solid var(--c1--3--);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: var(--c1--4--); /* Brown background */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
 }
 
-.swiper-button-next:after, 
-.swiper-button-prev:after {
-    content: "";
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
+.swiper-button-next::after {
+  transform: rotate(180deg);
+}
+.swiper-button-next::after {
+  transform: rotate(0deg); /* Keep the right arrow as is */
+}
 /* End Testimonial */
 
 /* Contact */
