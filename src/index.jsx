@@ -1,23 +1,30 @@
-// src/index.jsx
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import '../styles/globals.css';
-// import Footer from './components/Footer';
 
-export default function Home() {
+import Header from './components/Header';
+import Hero from './components/Hero';
+import BlendSlider from './components/BlendSlider';
+import Choose from './components/Choose';
+import Start from './components/Start';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+function App() {
   return (
     <>
-      {/* ...rest of your sections */}
-      <div
-        className="choose-card"
-        style={{ backgroundImage: 'url("/images/CoffeeSplash.png")' }}
-      >
-        {/* content */}
-      </div>
+      <Header />
+      <Hero />
+      <BlendSlider />
+      <Choose />
+      <Start />
+      <Testimonials />
+      <Contact />
       <Footer />
     </>
   );
 }
 
 const root = createRoot(document.getElementById('root'));
-root.render(<Home />);
+root.render(<App />);

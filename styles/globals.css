@@ -6,7 +6,6 @@
     @apply text-gray-800; /* Set default text color */
   }
 }
-
 @tailwind components;
 @tailwind utilities;
 

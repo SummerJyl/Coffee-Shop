@@ -35,10 +35,12 @@ module.exports = {
   },
 
   devServer: {
+    host: '0.0.0.0',
+    port: 8080,
     static: {
       directory: path.resolve(__dirname, 'public') },
     open: true,
     compress: true,
-    port: 8080,
+    allowedHosts: 'all',
   },
 };

@@ -1,3 +1,6 @@
+import React from 'react';
+
+export default function Hero() {
 <main>
         <section class="hero-bg">
             <div class="hero row flex container">
@@ -13,4 +16,4 @@
             </div>
         </section>
   </main>
-  
+}  
