@@ -20,7 +20,7 @@ export default function BlendSlider() {
               <h3>Garuda</h3>
               <p>Tropical Fruit, Spiced Nuts, Earth Blend</p>
               <h5>$13.99</h5>
-              <a href="#" className="page-btn">Explore more</a>
+              <a href="#" className="page-btn">Explore More</a>
             </div>
           </div>
           {/* Add other slides here... */}
