@@ -1,4 +1,5 @@
-// components/Choose.jsx
+import React from 'react';
+
 export default function Testimonial() {
   return (
         <section className="testimonial-bg">

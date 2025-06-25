@@ -1,4 +1,5 @@
-// components/Start.jsx
+import React from 'react';
+
 export default function Start() {
   return (
         <section class="start-bg">

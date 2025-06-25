@@ -1,5 +1,6 @@
-const { url } = require('inspector');
+// const { url } = require('inspector');
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'development',
@@ -38,9 +39,14 @@ module.exports = {
     host: '0.0.0.0',
     port: 8080,
     static: {
-      directory: path.resolve(__dirname, 'public') },
+      directory: path.resolve(__dirname, 'public') 
+    },
     open: true,
     compress: true,
     allowedHosts: 'all',
+    hot: true,
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };
