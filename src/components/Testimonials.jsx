@@ -1,36 +1,24 @@
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 
-import { Navigation, Pagination, Autoplay } from 'swiper/react';
-
-
 export default function Testimonials() {
   return (
     <section className="testimonials">
-      <div className="testimonial container">
-        <div className="heading column">
-          <h2>Bliss in Every Cup</h2>
-          <p>
-            We value your opinion! Share your thoughts about our coffee and service. Your feedback helps us strive for excellence with every cup. We value your input and are committed to crafting an experience that exceeds your expectations.
-          </p>
-        </div>
-        <Swiper
-          modules={[Navigation, Pagination, Autoplay]}
-          loop={true}
-          autoplay={{
-            delay: 5000,
-            disableOnInteraction: false,
-          }}
-          navigation={true}
-          pagination={{ clickable: true }}
-          slidesPerView={1}
-        >
-  {/* Your SwiperSlide components */}
-        </Swiper>
-
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        loop={true}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        navigation={true}
+        pagination={{ clickable: true}}
+        slidesPerView={1}
+        centeredSlides={true}
+        initialSlide={0}
+    >
           <SwiperSlide>
             <div className="testimonial">
               <div className="profile">
@@ -95,6 +83,16 @@ export default function Testimonials() {
               </div>
             </div>
           </SwiperSlide>
+      </Swiper>
+
+
+      <div className="testimonial container">
+        <div className="heading column">
+          <h2>Bliss in Every Cup</h2>
+          <p>
+            We value your opinion! Share your thoughts about our coffee and service. Your feedback helps us strive for excellence with every cup. We value your input and are committed to crafting an experience that exceeds your expectations.
+          </p>
+        </div>
       </div>
     </section>
   );
