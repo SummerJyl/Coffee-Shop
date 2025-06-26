@@ -2,11 +2,17 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import Contact from './components/Contact';
 import Map from './components/Map';
-import '../styles/globals.css';
+import Hero from './components/Hero';
+import BlendSlider from './components/BlendSlider';
+import Choose from './components/Choose';
+import Start from './components/Start';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
+import Discover from './components/Discover';
+import './styles/globals.css';
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
@@ -14,7 +20,13 @@ export default function App() {
     <>
       <Header openContactModal={openModal} />
       {/* other sections like Hero, BlendSlider, etc */}
-
+      <Hero />
+      <BlendSlider />
+      <Choose />
+      <Discover />
+      <Footer />
+      <Start />
+      <Testimonials />
       {/* Show modal only when open */}
       {isModalOpen && <Contact onClose={closeModal} />}
 
