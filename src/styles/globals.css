@@ -159,6 +159,44 @@ nav ul a {
     color: var(--c1--3--);
 }
 
+/* === Mobile Nav Toggle === */
+.navigation {
+  display: flex;
+  gap: 1rem;
+}
+
+.toggleMenu {
+  display: none;
+  background: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .navigation.active {
+    display: flex;
+  }
+
+  .toggleMenu {
+    display: block;
+  }
+}
+/* End Navigation */
+
 /* Page Button */
 .page-btn {
     cursor: pointer;
@@ -196,8 +234,6 @@ nav ul a {
 .toggleMenu {
     display: none;
 }
-
-/* End Navigation */
 
 /* Hero Section */
 .hero-bg {

@@ -5,7 +5,7 @@ export default function Choose() {
     <section className="choose-bg" id="choose">
       <div className="choose container">
         <div className="heading column">
-          <h2>Why Choose The Bean and Tea</h2>
+          <h2>NutriWell</h2>
           <p>
             Discover a symphony of flavors with our latest coffee and tea blends, meticulously crafted to redefine 
             your coffee or tea experience at The Bean and Tea.

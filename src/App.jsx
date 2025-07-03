@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, Suspense, lazy } from 'react';
 import Header from './components/Header';
-import Contact from './components/Contact';
-import Map from './components/Map';
 import Hero from './components/Hero';
 import BlendSlider from './components/BlendSlider';
-import Choose from './components/Choose';
 import Start from './components/Start';
-import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Discover from './components/Discover';
 import './styles/globals.css';
+
+const Choose = lazy(() => import('./components/Choose'));
+const Contact = lazy(() => import('./components/Contact'));
+const Map = lazy(() => import('./components/Map'));  
+const Testimonials = lazy(() => import('./components/Testimonials'));
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,26 +20,31 @@ export default function App() {
   return (
     <>
       <Header openContactModal={openModal} />
-      {/* other sections like Hero, BlendSlider, etc */}
+      {isModalOpen && (
+        <Suspense fallback={<div>Loading contact form...</div>}>
+          <Contact onClose={closeModal} />
+        </Suspense>
+      )}
+
       <Hero />
       <BlendSlider />
-      <Choose />
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <Choose />
+      </Suspense>
+
+      <Suspense fallback={<div>Loading map...</div>}>
+        <Map />
+      </Suspense>
+
       <Discover />
       <Footer />
       <Start />
+      
+      <Suspense fallback={<div>Loading testimonials...</div>}>
       <Testimonials />
-      {/* Show modal only when open */}
-      {isModalOpen && <Contact onClose={closeModal} />}
+      </Suspense>
 
-      {/* Show map separately in Contact section or wherever */}
-      <Map />
     </>
   );
 }
-
-
-// function MyApp({ Component, pageProps }) {
-//   return <Component {...pageProps} />;
-// }
-
-// export default MyApp;

@@ -1,7 +1,7 @@
 {
   "name": "nutriwell",
   "version": "1.0.0",
-  "description": "A modern, responsive Coffee & Tea Shop website template designed to provide a warm and inviting online presence.",
+  "description": "A modern, responsive supplement app that simplifies nutrition label data.",
   "main": "js.js",
   "scripts": {
     "start": "webpack serve --open --host 0.0.0.0",
