@@ -1,4 +1,4 @@
-# Coffee Shop Web App
+# ☕ Supplement Template
 
 A responsive, single-page application showcasing a local coffee shop's offerings, built with modern web technologies.
 
@@ -50,7 +50,22 @@ Sources
 
 ## 💡 About
 
-This Coffee & Tea Shop template delivers a comprehensive web experience focusing on the key elements that reflect the charm, offerings, and personality of a local coffee shop.
+NutriWell — Supplement Facts Simplified
+NutriWell is a responsive, user-friendly web application designed to help users effortlessly explore and understand supplement nutrition data. Built with modern React and TypeScript technologies, NutriWell fetches detailed nutrient information from trusted APIs, presenting complex supplement facts in clear, visual formats such as interactive charts.
+
+Whether you’re a health enthusiast, nutritionist, or just curious about what’s inside your supplements, NutriWell simplifies the science behind supplement labels — empowering smarter, informed decisions for better health.
+
+Key features include:
+
+Search and browse a vast database of supplements by name or ingredient
+
+Detailed nutrient breakdowns with clean data visualization
+
+Intuitive interface optimized for both desktop and mobile
+
+Scalable architecture ready for future enhancements like personalized tracking and recommendations
+
+
 
 ---
 
@@ -58,7 +73,7 @@ This Coffee & Tea Shop template delivers a comprehensive web experience focusing
 
 [Link to live demo or your deployed site]
 
-Experience the Coffee Shop web app live at: [https://yourusername.github.io/coffee-shop](https://yourusername.github.io/coffee-shop)
+Experience the Coffee Shop web app live at: [https://yourusername.github.io/nutriwell](https://yourusername.github.io/coffee-shop)
 
 ---
 
@@ -78,7 +93,7 @@ A responsive, modern single-page app showcasing a cozy coffee shop's offerings �
 ## ⚙️ Setup
 
 ```bash
-git clone https://github.com/yourusername/coffee-shop-app.git
+git clone https://github.com/yourusername/nutriwell-app.git
 cd coffee-shop-app
 npm install
 npm start
